@@ -1,0 +1,3 @@
+v 3
+d twoway_pgf
+p twoway_pgf LaTeX-native figures from Stata and Python

@@ -1,0 +1,10 @@
+include LICENSE NOTICES README.md environment.yml stata.toc twoway_pgf.pkg
+recursive-include src *.py *.json
+recursive-include stata *.ado *.py *.sthlp
+recursive-include bootstrap *.sh *.py
+recursive-include locks *.txt
+recursive-include artifacts *.whl *.zip
+recursive-include tools *.py
+global-exclude __pycache__ *.py[cod]
+prune build
+prune dist

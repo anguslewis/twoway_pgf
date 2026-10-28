@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "twoway-pgf"
+version = "0.1.0"
+description = "LaTeX-native figures from Python and Stata"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = ["numpy==2.2.6", "pandas==2.3.3", "matplotlib==3.10.9"]
+license = "MIT"
+license-files = ["LICENSE", "NOTICES"]
+authors = [{name = "Angus Lewis"}]
+keywords = ["Stata", "Matplotlib", "PGF", "LaTeX", "figures"]
+
+[project.urls]
+Repository = "https://github.com/anguslewis/twoway_pgf"
+Issues = "https://github.com/anguslewis/twoway_pgf/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+twoway_pgf = ["visual_settings.json", "settings_structure.json"]

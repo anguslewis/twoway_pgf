@@ -1,0 +1,15 @@
+# Create with your existing Conda: conda env create --file environment.yml
+# Then activate twoway_pgf and install the bundled wheel (see README).
+# Stata setup, install uses a platform lock with these dependency pins.
+# TeX is an existing, separately installed prerequisite.
+name: twoway_pgf
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.14
+  - numpy=2.2.6
+  - pandas=2.3.3
+  - matplotlib-base=3.10.9
+  - pip=26.2.1
+  - setuptools=84.0.0
+  - wheel=0.48.0

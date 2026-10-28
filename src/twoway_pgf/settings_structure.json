@@ -1,0 +1,273 @@
+{
+  "palette": "array",
+  "line_defaults": {
+    "palette_limit": "nullable_integer",
+    "grayscale_more_than": "integer",
+    "emphasis_color": "string",
+    "emphasis_pattern": "string"
+  },
+  "constants": {
+    "style": {
+      "REFERENCE_SHORT_SIDE_PT": "number",
+      "STATA_LINEWIDTH_RELSIZE": {
+        "none": "number",
+        "vvvthin": "number",
+        "vvthin": "number",
+        "vthin": "number",
+        "thin": "number",
+        "medthin": "number",
+        "medium": "number",
+        "medthick": "number",
+        "thick": "number",
+        "vthick": "number",
+        "vvthick": "number"
+      },
+      "STATA_TEXTSIZE_RELSIZE": {
+        "minuscule": "number",
+        "quarter_tiny": "number",
+        "third_tiny": "number",
+        "half_tiny": "number",
+        "tiny": "number",
+        "vsmall": "number",
+        "small": "number",
+        "medsmall": "number",
+        "medium": "number",
+        "medlarge": "number",
+        "large": "number",
+        "vlarge": "number",
+        "huge": "number",
+        "vhuge": "number"
+      },
+      "SQUARE_PT": "number",
+      "LEGEND_SWATCH_SQUARES": "number",
+      "HOUSE_DASH_SQUARES": {
+        "longdash": "array",
+        "dot": "array",
+        "dash": "array",
+        "dotlongdash": "array",
+        "dotdotdash": "array",
+        "furniture": "array"
+      },
+      "PATTERN_ORDER": "array",
+      "STATA_SYMBOLSIZE_RELSIZE": {
+        "vtiny": "number",
+        "tiny": "number",
+        "vsmall": "number",
+        "small": "number",
+        "medsmall": "number",
+        "medium": "number",
+        "medlarge": "number",
+        "large": "number",
+        "vlarge": "number"
+      },
+      "SYMBOLSIZE_DEFAULT": "string",
+      "STATA_SYMBOL_MARKER": {
+        "O": "array",
+        "circle": "array",
+        "Oh": "array",
+        "circle_hollow": "array",
+        "D": "array",
+        "diamond": "array",
+        "Dh": "array",
+        "diamond_hollow": "array",
+        "T": "array",
+        "triangle": "array",
+        "Th": "array",
+        "triangle_hollow": "array",
+        "S": "array",
+        "square": "array",
+        "Sh": "array",
+        "square_hollow": "array",
+        "X": "array",
+        "x": "array",
+        "plus": "array",
+        "p": "array",
+        "point": "array",
+        "none": "array",
+        "i": "array"
+      },
+      "SYMBOL_EDGE_WIDTH": "string"
+    },
+    "colors": {
+      "RAMP_DARK_L": "number",
+      "RAMP_LIGHT_L": "number",
+      "BACKGROUND": "string",
+      "GRID": "string",
+      "TICK": "string",
+      "AXISLINE": "string",
+      "XYLINE": "string",
+      "REFMARKER": "string",
+      "CI_AREA_ALPHA": "number",
+      "TEXT": "string",
+      "COL_G": "string",
+      "BAR_INTENSITY": "number",
+      "BAR_STACK_FADE": "number",
+      "CI_AREA": "string"
+    },
+    "rowstack": {
+      "FONT_BOX_ASCENT_RATIO": "number",
+      "FONT_BOX_DESCENT_RATIO": "number",
+      "CAP_RATIO": "number"
+    },
+    "api": {
+      "_LEGEND_PAD_IN": "number"
+    },
+    "primitives.line": {
+      "_MARK_OUTER_LW": "number",
+      "_MARK_RING_LW": "number",
+      "_MARK_ZORDER": "number"
+    },
+    "primitives.scatter": {
+      "RASTER_AUTO_THRESHOLD": "integer"
+    },
+    "primitives.bar": {
+      "SE_WHISKER_LIGHTEN": "number",
+      "SE_CAPSIZE": "number",
+      "BAR_ZORDER": "number",
+      "WHISKER_ZORDER": "number",
+      "WHISKER_PAD_FRACTION": "number",
+      "ERROR_MARKER_FACE_COLOR": "string"
+    },
+    "primitives.waterfall": {
+      "CONNECTOR_WIDTH": "string",
+      "CONNECTOR_COLOR": "string",
+      "CONNECTOR_ZORDER": "number",
+      "ZERO_LINE_ZORDER": "number",
+      "SD_WHISKER_LIGHTEN": "number",
+      "SD_WHISKER_WIDTH": "string",
+      "SD_CAP_WIDTH": "number",
+      "WHISKER_PAD_FRACTION": "number"
+    },
+    "primitives.hexbin": {
+      "_RAMP_STEPS": "integer",
+      "_KEY_TICK_LONGER": "number",
+      "KEY_SPAN_FRAC": "number",
+      "KEY_GAP_IN": "number",
+      "KEY_TITLE_PAD": "number"
+    },
+    "primitives.common": {
+      "REFERENCE_LINE_ZORDER": "number"
+    }
+  },
+  "rc": {
+    "agg.path.chunksize": "integer",
+    "axes.autolimit_mode": "string",
+    "axes.axisbelow": "boolean",
+    "axes.grid.which": "string",
+    "axes.labelpad": "number",
+    "axes.spines.bottom": "boolean",
+    "axes.spines.left": "boolean",
+    "axes.spines.right": "boolean",
+    "axes.spines.top": "boolean",
+    "axes.unicode_minus": "boolean",
+    "axes.xmargin": "number",
+    "axes.ymargin": "number",
+    "figure.constrained_layout.h_pad": "number",
+    "figure.constrained_layout.hspace": "number",
+    "figure.constrained_layout.use": "boolean",
+    "figure.constrained_layout.w_pad": "number",
+    "figure.constrained_layout.wspace": "number",
+    "figure.dpi": "number",
+    "figure.edgecolor": "string",
+    "figure.frameon": "boolean",
+    "grid.alpha": "number",
+    "grid.linestyle": "string",
+    "hatch.linewidth": "number",
+    "legend.borderaxespad": "number",
+    "legend.borderpad": "number",
+    "legend.columnspacing": "number",
+    "legend.handleheight": "number",
+    "legend.labelcolor": "string",
+    "legend.labelspacing": "number",
+    "legend.markerscale": "number",
+    "lines.antialiased": "boolean",
+    "lines.dash_capstyle": "string",
+    "lines.dash_joinstyle": "string",
+    "lines.dashdot_pattern": "array",
+    "lines.dashed_pattern": "array",
+    "lines.dotted_pattern": "array",
+    "lines.linewidth": "number",
+    "lines.markeredgewidth": "number",
+    "lines.markersize": "number",
+    "lines.scale_dashes": "boolean",
+    "lines.solid_capstyle": "string",
+    "lines.solid_joinstyle": "string",
+    "patch.antialiased": "boolean",
+    "patch.edgecolor": "string",
+    "patch.facecolor": "string",
+    "patch.force_edgecolor": "boolean",
+    "patch.linewidth": "number",
+    "path.simplify": "boolean",
+    "pgf.rcfonts": "boolean",
+    "pgf.texsystem": "string",
+    "savefig.bbox": "null",
+    "savefig.edgecolor": "string",
+    "savefig.pad_inches": "number",
+    "savefig.transparent": "boolean",
+    "xtick.direction": "string",
+    "xtick.labelcolor": "string",
+    "xtick.major.pad": "number",
+    "xtick.major.size": "number",
+    "xtick.minor.visible": "boolean",
+    "xtick.top": "boolean",
+    "ytick.direction": "string",
+    "ytick.labelcolor": "string",
+    "ytick.major.pad": "number",
+    "ytick.major.size": "number",
+    "ytick.minor.visible": "boolean",
+    "ytick.right": "boolean"
+  },
+  "spec_defaults": {
+    "_WATERFALL_FIELDS": {
+      "up_color": "string",
+      "down_color": "string",
+      "total_color": "string",
+      "bar_width": "number",
+      "connectors": "boolean"
+    },
+    "_BAR_FIELDS": {
+      "bar_width": "number",
+      "group_gap": "number"
+    },
+    "_SCATTER_FIELDS": {
+      "raster_dpi": "integer"
+    },
+    "_HEXBIN_FIELDS": {
+      "key_mode": "string",
+      "key_steps": "integer",
+      "key_substeps": "integer",
+      "key_show_ticks": "boolean",
+      "ramp": "array",
+      "legend_labelspacing": "number"
+    },
+    "_REFLINE_FIELDS": {
+      "color": "string",
+      "pattern": "string",
+      "linewidth": "string"
+    }
+  },
+  "grid": {
+    "enabled": "boolean",
+    "axis": "string",
+    "chart_axis": {
+      "bar": "string",
+      "waterfall": "string"
+    }
+  },
+  "legend": {
+    "handletextpad": "number",
+    "separate_seed_height_in": "number",
+    "columns": "integer",
+    "initial_handletextpad": "number"
+  },
+  "strokes": {
+    "data": "string",
+    "axes": "string",
+    "ticks": "string",
+    "bar_error": "string",
+    "waterfall_zero": "string"
+  },
+  "scatter": {
+    "symbol": "string"
+  }
+}

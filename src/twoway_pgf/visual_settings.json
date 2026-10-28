@@ -1,0 +1,550 @@
+{
+  "schema_version": 1,
+  "default_formats": [
+    "paper",
+    "slides"
+  ],
+  "base": {
+    "palette": [
+      "#0067A0",
+      "#CF8F00",
+      "#B86D96",
+      "#008E68",
+      "#C05500",
+      "#4DA2D2",
+      "#D8CD3B"
+    ],
+    "line_defaults": {
+      "palette_limit": 5,
+      "grayscale_more_than": 5,
+      "emphasis_color": "#000000",
+      "emphasis_pattern": "solid"
+    },
+    "constants": {
+      "style": {
+        "REFERENCE_SHORT_SIDE_PT": 324.0,
+        "STATA_LINEWIDTH_RELSIZE": {
+          "none": 0.0,
+          "vvvthin": 1e-06,
+          "vvthin": 0.01,
+          "vthin": 0.15,
+          "thin": 0.2,
+          "medthin": 0.25,
+          "medium": 0.3,
+          "medthick": 0.45,
+          "thick": 0.8,
+          "vthick": 1.4,
+          "vvthick": 2.6
+        },
+        "STATA_TEXTSIZE_RELSIZE": {
+          "minuscule": 0.3472,
+          "quarter_tiny": 0.34722,
+          "third_tiny": 0.46296,
+          "half_tiny": 0.6944,
+          "tiny": 1.3888,
+          "vsmall": 2.0833,
+          "small": 2.777,
+          "medsmall": 3.4722,
+          "medium": 3.8194,
+          "medlarge": 4.1667,
+          "large": 4.8611,
+          "vlarge": 5.5556,
+          "huge": 6.9444,
+          "vhuge": 9.7222
+        },
+        "SQUARE_PT": 2.592,
+        "LEGEND_SWATCH_SQUARES": 6.0,
+        "HOUSE_DASH_SQUARES": {
+          "longdash": [
+            4.0,
+            2.0
+          ],
+          "dot": [
+            1.0,
+            1.0
+          ],
+          "dash": [
+            2.0,
+            1.0
+          ],
+          "dotlongdash": [
+            1.0,
+            1.0,
+            4.0,
+            1.0
+          ],
+          "dotdotdash": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            2.0,
+            1.0
+          ],
+          "furniture": [
+            6.0,
+            1.0
+          ]
+        },
+        "PATTERN_ORDER": [
+          "longdash",
+          "dot",
+          "dash",
+          "dotlongdash",
+          "dotdotdash"
+        ],
+        "STATA_SYMBOLSIZE_RELSIZE": {
+          "vtiny": 0.0972,
+          "tiny": 0.35,
+          "vsmall": 0.525,
+          "small": 1.0403,
+          "medsmall": 1.2542,
+          "medium": 1.5264,
+          "medlarge": 1.9444,
+          "large": 2.4306,
+          "vlarge": 3.1208
+        },
+        "SYMBOLSIZE_DEFAULT": "small",
+        "STATA_SYMBOL_MARKER": {
+          "O": [
+            "o",
+            true
+          ],
+          "circle": [
+            "o",
+            true
+          ],
+          "Oh": [
+            "o",
+            false
+          ],
+          "circle_hollow": [
+            "o",
+            false
+          ],
+          "D": [
+            "D",
+            true
+          ],
+          "diamond": [
+            "D",
+            true
+          ],
+          "Dh": [
+            "D",
+            false
+          ],
+          "diamond_hollow": [
+            "D",
+            false
+          ],
+          "T": [
+            "^",
+            true
+          ],
+          "triangle": [
+            "^",
+            true
+          ],
+          "Th": [
+            "^",
+            false
+          ],
+          "triangle_hollow": [
+            "^",
+            false
+          ],
+          "S": [
+            "s",
+            true
+          ],
+          "square": [
+            "s",
+            true
+          ],
+          "Sh": [
+            "s",
+            false
+          ],
+          "square_hollow": [
+            "s",
+            false
+          ],
+          "X": [
+            "X",
+            true
+          ],
+          "x": [
+            "x",
+            false
+          ],
+          "plus": [
+            "+",
+            false
+          ],
+          "p": [
+            ".",
+            true
+          ],
+          "point": [
+            ".",
+            true
+          ],
+          "none": [
+            "none",
+            false
+          ],
+          "i": [
+            "none",
+            false
+          ]
+        },
+        "SYMBOL_EDGE_WIDTH": "medium"
+      },
+      "colors": {
+        "RAMP_DARK_L": 0.0,
+        "RAMP_LIGHT_L": 82.0,
+        "BACKGROUND": "#FFFFFF",
+        "GRID": "#909090",
+        "TICK": "#909090",
+        "AXISLINE": "#808080",
+        "XYLINE": "#707070",
+        "REFMARKER": "#B0B0B0",
+        "CI_AREA_ALPHA": 0.5,
+        "TEXT": "#000000",
+        "COL_G": "#909090",
+        "BAR_INTENSITY": 0.8,
+        "BAR_STACK_FADE": 0.4,
+        "CI_AREA": "#C6C6C6"
+      },
+      "rowstack": {
+        "FONT_BOX_ASCENT_RATIO": 0.009569999999999999,
+        "FONT_BOX_DESCENT_RATIO": 0.0027,
+        "CAP_RATIO": 0.00953
+      },
+      "api": {
+        "_LEGEND_PAD_IN": 0.01
+      },
+      "primitives.line": {
+        "_MARK_OUTER_LW": 3.0,
+        "_MARK_RING_LW": 2.0,
+        "_MARK_ZORDER": 2.5
+      },
+      "primitives.scatter": {
+        "RASTER_AUTO_THRESHOLD": 2000
+      },
+      "primitives.bar": {
+        "SE_WHISKER_LIGHTEN": 0.45,
+        "SE_CAPSIZE": 4.0,
+        "BAR_ZORDER": 2.0,
+        "WHISKER_ZORDER": 2.4,
+        "WHISKER_PAD_FRACTION": 0.03,
+        "ERROR_MARKER_FACE_COLOR": "#0067A0"
+      },
+      "primitives.waterfall": {
+        "CONNECTOR_WIDTH": "thin",
+        "CONNECTOR_COLOR": "gs9",
+        "CONNECTOR_ZORDER": 1.4,
+        "ZERO_LINE_ZORDER": 2.45,
+        "SD_WHISKER_LIGHTEN": 0.45,
+        "SD_WHISKER_WIDTH": "medthick",
+        "SD_CAP_WIDTH": 0.1,
+        "WHISKER_PAD_FRACTION": 0.03
+      },
+      "primitives.hexbin": {
+        "_RAMP_STEPS": 256,
+        "_KEY_TICK_LONGER": 1.2,
+        "KEY_SPAN_FRAC": 0.615,
+        "KEY_GAP_IN": 0.7,
+        "KEY_TITLE_PAD": 0.04
+      },
+      "primitives.common": {
+        "REFERENCE_LINE_ZORDER": 1.5
+      }
+    },
+    "rc": {
+      "agg.path.chunksize": 0,
+      "axes.autolimit_mode": "data",
+      "axes.axisbelow": true,
+      "axes.grid.which": "major",
+      "axes.labelpad": 5.0,
+      "axes.spines.bottom": true,
+      "axes.spines.left": true,
+      "axes.spines.right": false,
+      "axes.spines.top": false,
+      "axes.unicode_minus": true,
+      "axes.xmargin": 0.0,
+      "axes.ymargin": 0.0,
+      "figure.constrained_layout.h_pad": 0.09,
+      "figure.constrained_layout.hspace": 0.02,
+      "figure.constrained_layout.use": true,
+      "figure.constrained_layout.w_pad": 0.1569,
+      "figure.constrained_layout.wspace": 0.02,
+      "figure.dpi": 100.0,
+      "figure.edgecolor": "white",
+      "figure.frameon": true,
+      "grid.alpha": 1.0,
+      "grid.linestyle": ":",
+      "hatch.linewidth": 0.648,
+      "legend.borderaxespad": 0.5,
+      "legend.borderpad": 0.433,
+      "legend.columnspacing": 1.5,
+      "legend.handleheight": 0.6,
+      "legend.labelcolor": "black",
+      "legend.labelspacing": 0.399,
+      "legend.markerscale": 1.0,
+      "lines.antialiased": true,
+      "lines.dash_capstyle": "butt",
+      "lines.dash_joinstyle": "round",
+      "lines.dashdot_pattern": [
+        6.5043,
+        3.25215,
+        0.32522,
+        3.25215
+      ],
+      "lines.dashed_pattern": [
+        6.5043,
+        3.25215
+      ],
+      "lines.dotted_pattern": [
+        0.32522,
+        2.27651
+      ],
+      "lines.linewidth": 2.592,
+      "lines.markeredgewidth": 0.648,
+      "lines.markersize": 9.0,
+      "lines.scale_dashes": false,
+      "lines.solid_capstyle": "butt",
+      "lines.solid_joinstyle": "round",
+      "patch.antialiased": true,
+      "patch.edgecolor": "#0067A0",
+      "patch.facecolor": "#0067A0",
+      "patch.force_edgecolor": true,
+      "patch.linewidth": 0.648,
+      "path.simplify": false,
+      "pgf.rcfonts": false,
+      "pgf.texsystem": "pdflatex",
+      "savefig.bbox": null,
+      "savefig.edgecolor": "white",
+      "savefig.pad_inches": 0.0,
+      "savefig.transparent": false,
+      "xtick.direction": "out",
+      "xtick.labelcolor": "black",
+      "xtick.major.pad": 5.0,
+      "xtick.major.size": 4.489,
+      "xtick.minor.visible": false,
+      "xtick.top": false,
+      "ytick.direction": "out",
+      "ytick.labelcolor": "black",
+      "ytick.major.pad": 3.25,
+      "ytick.major.size": 4.489,
+      "ytick.minor.visible": false,
+      "ytick.right": false
+    },
+    "spec_defaults": {
+      "_WATERFALL_FIELDS": {
+        "up_color": "p1",
+        "down_color": "p5",
+        "total_color": "gs4",
+        "bar_width": 0.5988,
+        "connectors": true
+      },
+      "_BAR_FIELDS": {
+        "bar_width": 0.6,
+        "group_gap": 0.0
+      },
+      "_SCATTER_FIELDS": {
+        "raster_dpi": 600
+      },
+      "_HEXBIN_FIELDS": {
+        "key_mode": "continuous",
+        "key_steps": 140,
+        "key_substeps": 4,
+        "key_show_ticks": true,
+        "ramp": [
+          "p7",
+          "p1"
+        ],
+        "legend_labelspacing": 0.9
+      },
+      "_REFLINE_FIELDS": {
+        "color": "gs8",
+        "pattern": "dash",
+        "linewidth": "medthin"
+      }
+    },
+    "grid": {
+      "enabled": true,
+      "axis": "both",
+      "chart_axis": {
+        "bar": "y",
+        "waterfall": "y"
+      }
+    },
+    "legend": {
+      "handletextpad": 0.5,
+      "separate_seed_height_in": 1.0,
+      "columns": 2,
+      "initial_handletextpad": 0.601
+    },
+    "strokes": {
+      "data": "thick",
+      "axes": "medthin",
+      "ticks": "medthin",
+      "bar_error": "medium",
+      "waterfall_zero": "thin"
+    },
+    "scatter": {
+      "symbol": "O"
+    }
+  },
+  "formats": {
+    "paper": {
+      "width_in": 5.5249999999999995,
+      "height_in": 3.551785714285714,
+      "font_family": "serif",
+      "base_pt": 10.0,
+      "tex_preamble": "\\usepackage[T1]{fontenc}",
+      "max_points": null,
+      "legend_max_cols": null,
+      "axis_title_ratio": 1.0,
+      "tick_nbins": 6,
+      "ink_scale": 1.0,
+      "grid_linewidth": 0.648,
+      "unclip_boundary": false,
+      "tick_min_n": 4,
+      "layout": {
+        "region_w_in": 4.525,
+        "region_h_in": 2.25,
+        "pad_left_in": 0.78,
+        "pad_right_in": 0.22,
+        "pad_top_in": 0.14,
+        "leading_in": 0.21860000000000002,
+        "legend_extra_in": null,
+        "centre_narrow_ink": false,
+        "slot_w_in": 4.525
+      },
+      "visual": {},
+      "metrics_font_family": "serif",
+      "metrics_tex_preamble": "\\usepackage[T1]{fontenc}"
+    },
+    "paper_tall": {
+      "extends": "paper",
+      "layout": {
+        "region_h_in": 2.75
+      }
+    },
+    "slides": {
+      "width_in": 4.6094488,
+      "height_in": 2.95279,
+      "font_family": "sans-serif",
+      "base_pt": 8.0,
+      "tex_preamble": "",
+      "max_points": null,
+      "legend_max_cols": null,
+      "axis_title_ratio": 1.0,
+      "tick_nbins": 6,
+      "ink_scale": 0.8,
+      "grid_linewidth": 0.324,
+      "unclip_boundary": true,
+      "tick_min_n": 4,
+      "layout": {
+        "region_w_in": 3.6094488,
+        "region_h_in": 1.6406999999999998,
+        "pad_left_in": 0.6944,
+        "pad_right_in": 0.3056,
+        "pad_top_in": 0.04,
+        "leading_in": 0.14528800000000003,
+        "legend_extra_in": null,
+        "centre_narrow_ink": true,
+        "slot_w_in": 3.6094488
+      },
+      "visual": {},
+      "metrics_font_family": "sans-serif",
+      "metrics_tex_preamble": ""
+    },
+    "slides_tall": {
+      "extends": "slides",
+      "layout": {
+        "region_h_in": 1.785988
+      }
+    },
+    "paper_short": {
+      "width_in": 6.5,
+      "height_in": 3.4,
+      "font_family": "serif",
+      "base_pt": 10.0,
+      "tex_preamble": "\\usepackage[T1]{fontenc}",
+      "max_points": null,
+      "legend_max_cols": null,
+      "axis_title_ratio": 1.0,
+      "tick_nbins": 6,
+      "ink_scale": 1.0,
+      "grid_linewidth": 0.648,
+      "unclip_boundary": false,
+      "tick_min_n": 4,
+      "layout": null,
+      "visual": {},
+      "metrics_font_family": "serif",
+      "metrics_tex_preamble": "\\usepackage[T1]{fontenc}"
+    },
+    "paper2x1": {
+      "width_in": 3.185,
+      "height_in": 3.185,
+      "font_family": "serif",
+      "base_pt": 10.0,
+      "tex_preamble": "\\usepackage[T1]{fontenc}",
+      "max_points": null,
+      "legend_max_cols": 3,
+      "axis_title_ratio": 1.0,
+      "tick_nbins": 4,
+      "ink_scale": 1.0,
+      "grid_linewidth": 0.648,
+      "unclip_boundary": false,
+      "tick_min_n": 4,
+      "layout": {
+        "region_w_in": 2.15,
+        "region_h_in": 2.15,
+        "pad_left_in": 0.7605,
+        "pad_right_in": 0.2745,
+        "pad_top_in": 0.14,
+        "leading_in": 0.21860000000000002,
+        "legend_extra_in": null,
+        "centre_narrow_ink": false,
+        "slot_w_in": 2.15
+      },
+      "visual": {},
+      "metrics_font_family": "serif",
+      "metrics_tex_preamble": "\\usepackage[T1]{fontenc}"
+    },
+    "slides2x1": {
+      "width_in": 2.70078739,
+      "height_in": 2.70078739,
+      "font_family": "sans-serif",
+      "base_pt": 8.0,
+      "tex_preamble": "",
+      "max_points": null,
+      "legend_max_cols": 3,
+      "axis_title_ratio": 1.0,
+      "tick_nbins": 4,
+      "ink_scale": 0.8,
+      "grid_linewidth": 0.324,
+      "unclip_boundary": true,
+      "tick_min_n": 4,
+      "layout": {
+        "region_w_in": 1.823,
+        "region_h_in": 1.3672499999999999,
+        "pad_left_in": 0.633294,
+        "pad_right_in": 0.244494,
+        "pad_top_in": 0.04,
+        "leading_in": 0.14528800000000003,
+        "legend_extra_in": null,
+        "centre_narrow_ink": false,
+        "slot_w_in": 1.823
+      },
+      "visual": {},
+      "metrics_font_family": "sans-serif",
+      "metrics_tex_preamble": ""
+    }
+  }
+}
