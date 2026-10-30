@@ -12,8 +12,8 @@ program define _twoway_pgf_select, rclass
         file read `f' chosen
         file read `f' texbin
         file close `f'
-        if "`registered'" != "0.1.0" {
-            di as error "twoway_pgf wrapper 0.1.0; registered backend `registered'."
+        if "`registered'" != "0.1.1" {
+            di as error "twoway_pgf wrapper 0.1.1; registered backend `registered'."
             di as error "Install the matching backend: twoway_pgf_setup"
             exit 499
         }
@@ -29,6 +29,6 @@ program define _twoway_pgf_select, rclass
     findfile twoway_pgf_bridge.py
     local bridge "`r(fn)'"
     // Version preflight precedes spec parsing, CSV export, or any Matplotlib import.
-    python script "`bridge'", args("--check" "0.1.0")
+    python script "`bridge'", args("--check" "0.1.1")
     return local texbin `"`texbin'"'
 end

@@ -48,18 +48,18 @@ environment manager or TeX.
 ### Stata
 
 ```stata
-net install twoway_pgf, from("https://raw.githubusercontent.com/anguslewis/twoway_pgf/v0.1.0")
+net install twoway_pgf, from("https://raw.githubusercontent.com/anguslewis/twoway_pgf/v0.1.1")
 twoway_pgf_setup, install
 ```
 
 ### Python
 
 ```sh
-git clone --branch v0.1.0 https://github.com/anguslewis/twoway_pgf.git
+git clone --branch v0.1.1 https://github.com/anguslewis/twoway_pgf.git
 cd twoway_pgf
 conda env create --file environment.yml
 conda activate twoway_pgf
-python -m pip install --no-index --no-deps artifacts/twoway_pgf-0.1.0-py3-none-any.whl
+python -m pip install --no-index --no-deps artifacts/twoway_pgf-0.1.1-py3-none-any.whl
 ```
 
 See [Technical details of installation](#technical-details-of-installation) for
@@ -309,7 +309,7 @@ constrained-layout format such as `paper_short`.
   for exact manual creation. On other POSIX systems, including Intel Macs,
   create the YAML environment manually and validate it with `python()`.
   Windows needs manual Stata `python set exec` configuration and remains untested.
-  Wrapper and backend must both be version 0.1.0.
+  Wrapper and backend must both be version 0.1.1.
 
 ### Outputs and LaTeX
 

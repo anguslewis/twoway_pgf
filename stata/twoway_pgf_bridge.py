@@ -2,7 +2,7 @@
 import importlib.metadata
 import sys
 
-expected = '0.1.0'
+expected = '0.1.1'
 command = ('twoway_pgf_setup, install (using existing Conda), or '
            'twoway_pgf_setup, python("/path/to/prepared/environment/bin/python")')
 if sys.version_info[:3] != (3, 12, 14):

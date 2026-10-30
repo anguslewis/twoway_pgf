@@ -10,9 +10,9 @@ program define _twoway_pgf_package, rclass
         return local path `"`directory'../"'
         exit
     }
-    findfile twoway_pgf_stata-0.1.0.zip
+    findfile twoway_pgf_stata-0.1.1.zip
     local bundle `"`r(fn)'"'
-    local payload_id "0.1.0-ec9e070ae9af"
+    local payload_id "0.1.1-cf57af02cc9a"
     local package "`root'/package-`payload_id'"
     capture confirm file "`package'/.payload-ready"
     if _rc {
@@ -29,7 +29,7 @@ program define _twoway_pgf_package, rclass
         quietly cd `"`previous'"'
         if `status' exit `status'
         confirm file "`package'/bootstrap/setup.sh"
-        confirm file "`package'/artifacts/twoway_pgf-0.1.0-py3-none-any.whl"
+        confirm file "`package'/artifacts/twoway_pgf-0.1.1-py3-none-any.whl"
         tempname ready
         file open `ready' using "`package'/.payload-ready", write text
         file write `ready' "`payload_id'" _n

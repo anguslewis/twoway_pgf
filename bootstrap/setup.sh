@@ -57,9 +57,41 @@ verify() {
 [[ "$ROOT" == /* ]] || { echo 'Package storage root must be absolute' >&2; exit 1; }
 mkdir -p "$ROOT" || { echo "Cannot create package directory $ROOT. Check PLUS write permissions." >&2; exit 1; }
 ROOT="$(cd "$ROOT" && pwd -P)"
-# Serialize package state.
-mkdir "$ROOT/.setup-lock" || { echo "Cannot lock setup at $ROOT. Check write permissions; an existing .setup-lock means another setup is active or needs manual review." >&2; exit 1; }
-trap 'rmdir "$ROOT/.setup-lock"' EXIT
+# Validation is read-only with respect to shared package state: diagnostics
+# use unique temporary files, the interpreter record is committed atomically
+# only after Stata accepts the selection, and cache directories use mkdir -p.
+# Do not serialize every figure job behind one global lock. In particular,
+# an unconditional lock here made concurrent figure jobs fail even though
+# they only validated the already-installed backend.
+LOCK_DIR="$ROOT/.setup-lock"
+if [[ "$MODE" == install ]]; then
+    mkdir "$LOCK_DIR" || {
+        echo "Cannot lock installation at $ROOT. Another installation may be active." >&2
+        if [[ -f "$LOCK_DIR/owner" ]]; then
+            echo "Lock owner:" >&2
+            cat "$LOCK_DIR/owner" >&2
+        else
+            echo "The lock has no owner record (legacy or interrupted setup); inspect it before removal." >&2
+        fi
+        exit 1
+    }
+    cleanup_lock() {
+        rm -f "$LOCK_DIR/owner"
+        rmdir "$LOCK_DIR"
+    }
+    trap cleanup_lock EXIT
+    trap 'exit 129' HUP
+    trap 'exit 130' INT
+    trap 'exit 143' TERM
+    {
+        printf 'pid=%s\n' "$$"
+        printf 'host=%s\n' "$(hostname)"
+        printf 'slurm_job_id=%s\n' "${SLURM_JOB_ID:-none}"
+        printf 'started_utc=%s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+    } > "$LOCK_DIR/owner"
+elif [[ -d "$LOCK_DIR" && -f "$LOCK_DIR/owner" ]]; then
+    echo "An install-lock record exists at $LOCK_DIR; validation is lock-free." >&2
+fi
 export PYTHONNOUSERSITE=1
 unset PYTHONPATH PYTHONHOME
 export MPLCONFIGDIR="$ROOT/cache/mpl" XDG_CACHE_HOME="$ROOT/cache"

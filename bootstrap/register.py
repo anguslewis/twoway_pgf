@@ -6,7 +6,7 @@ import tempfile
 
 record = Path(sys.argv[1]).read_text()
 values = record.splitlines()
-if len(values) != 3 or values[0] != '0.1.0' or not Path(values[1]).is_file():
+if len(values) != 3 or values[0] != '0.1.1' or not Path(values[1]).is_file():
     raise RuntimeError('Invalid setup receipt; previous registration is unchanged')
 registry = Path(sys.argv[2])
 registry.parent.mkdir(parents=True, exist_ok=True)

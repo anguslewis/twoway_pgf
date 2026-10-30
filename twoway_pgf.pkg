@@ -1,5 +1,5 @@
 v 3
-d twoway_pgf 0.1.0: LaTeX-native figures from Stata and Python
+d twoway_pgf 0.1.1: LaTeX-native figures from Stata and Python
 d Angus Lewis
 d Requires Stata 16+, external Python and TeX
 f stata/_twoway_pgf_package.ado
@@ -10,5 +10,5 @@ f stata/twoway_pgf.ado
 f stata/twoway_pgf.sthlp
 F stata/twoway_pgf_bridge.py
 f stata/twoway_pgf_setup.ado
-F artifacts/twoway_pgf_stata-0.1.0.zip
+F artifacts/twoway_pgf_stata-0.1.1.zip
 e

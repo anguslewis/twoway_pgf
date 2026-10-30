@@ -1,5 +1,5 @@
 """LaTeX-native figures from Python or Stata."""
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 def render(spec, manifest_dir=None, *, settings=None):
     from .api import render as render_impl

@@ -1,4 +1,4 @@
-*! twoway_pgf_setup 0.1.0 -- validate existing Python; installation is opt-in
+*! twoway_pgf_setup 0.1.1 -- validate existing Python; installation is opt-in
 program define twoway_pgf_setup, rclass
     version 16
     syntax [, PYthon(string) ENVPath(string) MANager(string) TEXBin(string) OFFLine INSTALL]
@@ -71,8 +71,8 @@ program define twoway_pgf_setup, rclass
     file read `f' chosen
     file read `f' chosen_texbin
     file close `f'
-    if "`backend'" != "0.1.0" {
-        di as error "Setup receipt version `backend' does not match wrapper 0.1.0."
+    if "`backend'" != "0.1.1" {
+        di as error "Setup receipt version `backend' does not match wrapper 0.1.1."
         exit 499
     }
     quietly python query
@@ -86,5 +86,5 @@ program define twoway_pgf_setup, rclass
     return local python_exec `"`chosen'"'
     return local texbin `"`chosen_texbin'"'
     return local registry `"`registry'"'
-    di as result "twoway_pgf 0.1.0 setup passed; Python: `chosen'"
+    di as result "twoway_pgf 0.1.1 setup passed; Python: `chosen'"
 end

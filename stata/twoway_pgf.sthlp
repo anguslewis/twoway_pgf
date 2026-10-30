@@ -1,5 +1,5 @@
 {smcl}
-{title:twoway_pgf 0.1.0 — LaTeX-native figures}
+{title:twoway_pgf 0.1.1 — LaTeX-native figures}
 
 {p 4 4 2}
 Export line, scatter, bar, waterfall and hexbin figures as PGF, with optional
